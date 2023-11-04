@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Hi, pengpeng</title>
+</head>
+<body>
+    <!-- tree -->
+    <ul class="tree">
+        <div class="star"></div>
+    </ul>
+    <h1 id="title">Hi {{ name }}</h1>
+    <br><br>
+
+    <!-- chat box -->
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <div id="chat"></div>
+
+</body>
+<script src="/script.js"></script>
+
+<script>
+    let tree = document.querySelector('.tree')
+    for (let i = 0; i < 128; i++){
+        let li = document.createElement('li')
+        li.style = "--i:" + i
+        tree.appendChild(li)
+    }
+</script>
+</html>
